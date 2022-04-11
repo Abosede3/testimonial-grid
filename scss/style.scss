@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;0,700;1,600&display=swap');
+
+
+
+/* ### Primary */
+$Moderate-violet: hsl(263, 55%, 52%);
+$Very-dark-grayish-blue: hsl(217, 19%, 35%);
+$Very-dark-blackish-blue: hsl(219, 29%, 14%);
+$White: hsl(0, 0%, 100%);
+$shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+
+/* ### Neutral */
+$Light-gray: hsl(0, 0%, 81%);
+$Light-grayish-blue: hsl(210, 46%, 95%);
+
+
+*, *::before, *::after
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    font-size: 100%;
+}
+
+body
+{
+    background: $Light-grayish-blue;
+    font-family: 'Barlow Semi Condensed', sans-serif ;
+    font-size: 13px;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.wrapper
+{
+    max-width: 1400px;
+    padding: 6rem;
+    margin-bottom: 1.3rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "purple purple grey big-white"
+    "purple purple grey big-white"
+    "small-white black black big-white"
+    ;
+    grid-gap: 20px;
+
+
+    .testimonial-purple
+    {
+        grid-area: purple;
+        background-color: $Moderate-violet;
+        border-radius: 15px;
+        padding: 1rem 1.5rem;
+        box-shadow: $shadow;
+
+
+        .area-one
+        {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 1rem;
+
+            span 
+            {
+                img 
+                {
+                    width: 40px;
+                    border-radius: 100%;
+                    border: 2px solid hsl(263, 87%, 79%);
+                }
+            }
+
+            div 
+            {
+                padding-left: 20px;
+                
+                h3 
+                {
+                    color: hsl(264, 62%, 90%);
+                    font-weight: 500;
+                    font-size: 15px;
+                }
+                p 
+                {
+                    color: hsl(263, 87%, 79%);
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .area-two
+        {
+            margin-bottom: 1rem;
+
+            h6
+            {
+                font-size: 18px;
+                color: hsl(264, 62%, 90%);
+                font-weight: 500;
+            }
+        }
+
+        .area-three
+        {
+            font-size: 14px ;
+            color: hsl(263, 87%, 79%);
+        }
+
+
+    }
+    // End of testimonial-purple
+
+    .testimonial-grey
+    {
+        grid-area: grey;
+        background-color: $Very-dark-grayish-blue;
+        border-radius: 15px;
+        padding: 1rem 1.5rem;
+        box-shadow: $shadow;
+
+
+        .area-one
+        {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 1rem;
+
+            span 
+            {
+                img 
+                {
+                    width: 40px;
+                    border-radius: 100%;
+                    border: 2px solid hsl(218, 22%, 61%);
+                }
+            }
+
+            div 
+            {
+                padding-left: 20px;
+                
+                h3 
+                {
+                    color: hsl(215, 17%, 86%);
+                    font-weight: 500;
+                    font-size: 15px;
+                }
+                p 
+                {
+                    color: hsl(218, 22%, 61%);
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .area-two
+        {
+            margin-bottom: 1rem;
+
+            h6
+            {
+                font-size: 18px;
+                color: hsl(215, 17%, 86%);
+                font-weight: 500;
+            }
+        }
+
+        .area-three
+        {
+            font-size: 14px ;
+            color: hsl(218, 22%, 61%);
+        }
+    }
+    // END OF TESTIMONIAL-GREY
+
+    .testimonial-big-white
+    {
+        grid-area: big-white;
+        background-color: $White;
+        border-radius: 15px;
+        padding: 1rem 1.5rem;
+        box-shadow: $shadow;
+
+        .area-one
+        {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 1rem;
+
+            span 
+            {
+                img 
+                {
+                    width: 40px;
+                    border-radius: 100%;
+                    border: 2px solid $White;
+                }
+            }
+
+            div 
+            {
+                padding-left: 20px;
+                
+                h3 
+                {
+                    color: $Very-dark-grayish-blue;
+                    font-weight: 500;
+                    font-size: 15px;
+                }
+                p 
+                {
+                    color: hsl(222, 17%, 77%);
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .area-two
+        {
+            margin-bottom: 1rem;
+
+            h6
+            {
+                font-size: 18px;
+                color: $Very-dark-grayish-blue;
+                font-weight: 500;
+            }
+        }
+
+        .area-three
+        {
+            font-size: 14px ;
+            color: hsl(222, 17%, 77%);
+        }
+    }
+    // END OF TESTIMONIAL-BIG-WHITE
+
+
+    .testimonial-small-white
+    {
+        grid-area: small-white;
+        background-color: $White;
+        border-radius: 15px;
+        padding: 1rem 1.5rem;
+        box-shadow: $shadow;
+
+        .area-one
+        {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 1rem;
+
+            span 
+            {
+                img 
+                {
+                    width: 40px;
+                    border-radius: 100%;
+                    border: 2px solid $White;
+                }
+            }
+
+            div 
+            {
+                padding-left: 20px;
+                
+                h3 
+                {
+                    color: $Very-dark-grayish-blue;
+                    font-weight: 500;
+                    font-size: 15px;
+                }
+                p 
+                {
+                    color: hsl(222, 17%, 77%);
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .area-two
+        {
+            margin-bottom: 1rem;
+
+            h6
+            {
+                font-size: 18px;
+                color: $Very-dark-grayish-blue;
+                font-weight: 500;
+            }
+        }
+
+        .area-three
+        {
+            font-size: 14px ;
+            color: hsl(222, 17%, 77%);
+        }
+    }
+
+    .testimonial-blackish-blue
+    {
+        grid-area: black;
+        background-color: $Very-dark-blackish-blue;
+        border-radius: 15px;
+        padding: 1rem 1.5rem;
+        box-shadow: $shadow;
+
+
+        .area-one
+        {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 1rem;
+
+            span 
+            {
+                img 
+                {
+                    width: 40px;
+                    border-radius: 100%;
+                    border: 2px solid hsl(263, 87%, 79%);
+                }
+            }
+
+            div 
+            {
+                padding-left: 20px;
+                
+                h3 
+                {
+                    color: hsl(215, 17%, 86%);
+                    font-weight: 500;
+                    font-size: 15px;
+                }
+                p 
+                {
+                    color: $Light-gray;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .area-two
+        {
+            margin-bottom: 1rem;
+
+            h6
+            {
+                font-size: 18px;
+                color: hsl(215, 17%, 86%);
+                font-weight: 500;
+            }
+        }
+
+        .area-three
+        {
+            font-size: 14px ;
+            color: $Light-gray;
+        }
+
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 991px)
+{
+        .wrapper
+        {
+            padding: 2.5rem;
+            // grid-template-columns: minmax(400px, 1fr);
+            grid-template-areas: 
+            "purple purple purple grey"
+            "big-white big-white big-white big-white"
+            "black black black small-white"
+            ;
+
+        }
+
+}
+
+
+
+@media (max-width: 768px)
+{
+    .wrapper
+    {
+        margin: auto;
+        padding: 3rem;
+        grid-template-columns: minmax(400px, 1fr);
+        grid-template-areas: 
+        "purple"
+        "grey"
+        "big-white"
+        "black"
+        "small-white"
+        ;
+    }
+}
+
