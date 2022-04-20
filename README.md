@@ -4,7 +4,10 @@ This is a solution to the [Testimonial grid challenge on Frontend Mentor](https:
 
 ### Screenshot
 
+#### Destop view
 ![](./images/Screen%20Shot%202022-04-20%20at%205.15.53%20PM.png)
+
+#### Mobile view
 ![](./images/testy-grid.netlify.app_.png)
 
 ### Links
