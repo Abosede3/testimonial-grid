@@ -9,7 +9,7 @@ This is a solution to the [Testimonial grid challenge on Frontend Mentor](https:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://testy-grid.netlify.app/)
+- Solution URL: (https://testy-grid.netlify.app/)
 
 
 ### Built with
